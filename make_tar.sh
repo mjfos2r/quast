@@ -27,7 +27,7 @@ rm -fr  release/$QUAST_FOLDER/quast_libs/site_packages/*/tests
 rm -fr  release/$QUAST_FOLDER/quast_libs/blast/16S_RNA_blastdb
 
 cd release
-tar -pczf $ARCHIVE_NAME $QUAST_FOLDER
+tar --no-xattrs -pczf $ARCHIVE_NAME $QUAST_FOLDER
 cd ..
 mv release/$ARCHIVE_NAME .
 rm -fr release
